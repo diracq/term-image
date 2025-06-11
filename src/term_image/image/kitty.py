@@ -330,7 +330,7 @@ class KittyImage(GraphicsImage):
                             cls._KITTY_VERSION = version_tuple
                             cls._supported = True
                 # Konsole is good as long as it responds to the graphics query
-                elif name in self._terminals:
+                elif name in cls._terminals:
                     cls._TERM, cls._TERM_VERSION = name, version or ""
                     cls._supported = True
 
